@@ -1,12 +1,11 @@
 const express = require('express');
-const mongoose = require('mongoose');
+const mongoose = require('mongoose');  
 const cors = require('cors');
-
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-const dbURI = "mongodb+srv://nobitamfatehii143_db_user:Cra6NpvAXSiA12DG@cluster0.4gbauam.mongodb.net/vvip_db?retryWrites=true&w=majority";
+const dbURI = "mongodb+srv://nobitamfatehii143_db_user:VVIP_Success_2026@cluster0.4gbauam.mongodb.net/vvip_db?retryWrites=true&w=majority";
 
 mongoose.connect(dbURI)
   .then(() => console.log("VVIP Sales Database Connected! 🟢"))
